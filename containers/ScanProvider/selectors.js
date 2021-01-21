@@ -1,12 +1,9 @@
-import { createSelector } from 'reselect';
-import { init } from './reducer';
+import { createSelector } from "reselect";
+import { init } from "./reducer";
 
-const selectScan = state => state.scan || init;
+const selectScan = (state) => state.scan || init;
 
 const makeSelectScan = () =>
-  createSelector(
-    selectScan,
-    eventState => eventState,
-  );
+  createSelector(selectScan, (eventState) => eventState);
 
 export { selectScan, makeSelectScan };

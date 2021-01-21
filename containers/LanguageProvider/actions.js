@@ -1,13 +1,6 @@
+import { CHANGE_LOCALE } from "./constants";
 
-/*
- *
- * LanguageProvider actions
- *
- */
-
-import { CHANGE_LOCALE } from './constants';
-
-import * as config from '../../config/i18n';
+import * as config from "../../config/i18n";
 
 export function changeLocale(languageLocale) {
   return {

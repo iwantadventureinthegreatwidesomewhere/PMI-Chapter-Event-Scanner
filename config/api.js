@@ -1,1 +1,1 @@
-export const APIURL = ""
+export const APIURL = "";

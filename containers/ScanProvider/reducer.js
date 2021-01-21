@@ -1,5 +1,5 @@
-import produce from 'immer';
-import { SUCCESSFUL_SCAN, FAILURE_SCAN, RESET } from './constants';
+import produce from "immer";
+import { SUCCESSFUL_SCAN, FAILURE_SCAN, RESET } from "./constants";
 
 export const init = {
   successful: false,
@@ -7,7 +7,7 @@ export const init = {
 };
 
 const scanProviderReducer = (state = init, action) =>
-  produce(state, draft => {
+  produce(state, (draft) => {
     switch (action.type) {
       case SUCCESSFUL_SCAN:
         draft.successful = true;
@@ -20,6 +20,6 @@ const scanProviderReducer = (state = init, action) =>
         draft.failure = false;
         break;
     }
-});
+  });
 
 export default scanProviderReducer;

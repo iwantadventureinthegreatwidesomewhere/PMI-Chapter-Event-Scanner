@@ -1,25 +1,10 @@
-import { createSelector } from 'reselect';
-import { initialState } from './reducer';
+import { createSelector } from "reselect";
+import { initialState } from "./reducer";
 
-/**
- * Direct selector to the home state domain
- */
-
-const selectScanPageDomain = state => state.scanPage || initialState;
-
-/**
- * Other specific selectors
- */
-
-/**
- * Default selector used by Home
- */
+const selectScanPageDomain = (state) => state.scanPage || initialState;
 
 const makeSelectScanPage = () =>
-  createSelector(
-    selectScanPageDomain,
-    substate => substate,
-  );
+  createSelector(selectScanPageDomain, (substate) => substate);
 
 export default makeSelectScanPage;
 export { selectScanPageDomain };

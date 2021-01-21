@@ -1,1 +1,1 @@
-export const ERROR = 'containers/App/ERROR';
+export const ERROR = "containers/App/ERROR";

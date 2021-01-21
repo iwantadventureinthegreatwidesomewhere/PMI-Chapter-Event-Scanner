@@ -1,11 +1,10 @@
-import produce from 'immer';
-import { } from './constants';
+import produce from "immer";
+import {} from "./constants";
 
-export const initialState = {
-};
+export const initialState = {};
 
 const disclaimerPageReducer = (state = initialState, action) =>
-  produce(state, draft => {
+  produce(state, (draft) => {
     switch (action.type) {
     }
   });
